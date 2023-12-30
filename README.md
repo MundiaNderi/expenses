@@ -27,3 +27,5 @@ Users should be able to:
 ## Deploying your project
 
 This project is hosted on Netlify: https://chimerical-cendol-ec3d92.netlify.app
+
+Medium Blog Post: https://medium.com/blog-write-heal/building-an-expenses-chart-from-json-data-3af1241723ce?sk=f7b39908bfcc4f8aabbaaeb0b39aaa96
