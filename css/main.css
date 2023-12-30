@@ -544,9 +544,9 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.my-9 {
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mx-4 {
@@ -554,14 +554,14 @@ video {
   margin-right: 1rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
-}
-
-.mx-7 {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
 }
 
 .my-7 {
@@ -569,60 +569,64 @@ video {
   margin-bottom: 1.75rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
-.mr-9 {
-  margin-right: 2.25rem;
-}
-
-.ml-72 {
-  margin-left: 18rem;
-}
-
-.ml-36 {
-  margin-left: 9rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.ml-36 {
+  margin-left: 9rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-7 {
+  margin-left: 1.75rem;
+}
+
+.mr-14 {
+  margin-right: 3.5rem;
 }
 
 .mr-6 {
   margin-right: 1.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .flex-row {
   flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -633,22 +637,41 @@ video {
   justify-content: center;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .bg-cream {
   --tw-bg-opacity: 1;
   background-color: hsl(27 66% 92% / var(--tw-bg-opacity));
+}
+
+.bg-hrCream {
+  background-color: hsla(27, 66%, 92%, 1);
 }
 
 .bg-redBalance {
   background-color: hsla(10, 79%, 64%, 1);
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.font-dmSans {
+  font-family: DM Sans, sans-serif;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base {
@@ -656,17 +679,36 @@ video {
   line-height: 1.5rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-normal {
   font-weight: 400;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-darkBrown {
+  --tw-text-opacity: 1;
+  color: hsl(25 47% 15% / var(--tw-text-opacity));
+}
+
+.text-mediumBrown {
+  color: hsla(27, 10%, 52%, 1);
 }
 
 .text-white {
@@ -674,7 +716,48 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+/* bars */
+
+#my-chart #my-red-bars rect {
+  fill: #EC755D !important;
+  border-radius: 5px !important;
+}
+
+@media(min-width: 756px) {
+  .card {
+    width: 540px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+
+  .balance {
+    border-radius: 20px;
+    width: 540px;
+    height: 125px;
+  }
+}
+
+@media(max-width: 480px) {
+  .balance {
+    width: 343px;
+    height: 97px;
+    border-radius: 10px;
+  }
+
+  .card {
+    width: 343px;
+    height: 400px;
+    border-radius: 10px;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .md\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
@@ -685,6 +768,22 @@ video {
     margin-bottom: 2.25rem;
   }
 
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .md\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .md\:ml-56 {
+    margin-left: 14rem;
+  }
+
   .md\:ml-72 {
     margin-left: 18rem;
   }
@@ -693,19 +792,38 @@ video {
     margin-left: 2rem;
   }
 
-  .md\:mb-6 {
-    margin-bottom: 1.5rem;
+  .md\:mr-10 {
+    margin-right: 2.5rem;
   }
 
-  .md\:mt-7 {
-    margin-top: 1.75rem;
+  .md\:mr-36 {
+    margin-right: 9rem;
   }
 
   .md\:mr-9 {
     margin-right: 2.25rem;
   }
 
-  .md\:ml-64 {
-    margin-left: 16rem;
+  .md\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

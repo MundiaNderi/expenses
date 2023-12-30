@@ -21,15 +21,17 @@
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body class="bg-cream">
-    <div class="mx-4 my-16 justify-center items-center flex md:my-45 md:mx-96">
+    <div
+      class="mx-4 my-16 justify-center items-center flex flex-col md:my-45 md:mx-96"
+    >
       <!--balance-->
-      <div class="balance flex flex-row bg-redBalance rounded-md mt-6">
+      <div class="balance flex flex-row bg-redBalance items-center justify-center mt-6">
         <div>
-          <p class="text-white text-base font-normal mt-5 ml-5 md:mt-7 md:ml-8">
+          <p class="text-white text-xs md:text-base font-normal mt-5 ml-5 md:mt-7 md:ml-8">
             My Balance
           </p>
           <p
-            class="text-white font-dm-sans font-bold text-4xl ml-5 mb-5 md:ml-8 md:mb-6"
+            class="text-white font-dmSans font-bold text-lg md:text-4xl ml-5 mb-5 md:ml-8 md:mb-6"
           >
             $921.48
           </p>
@@ -50,7 +52,41 @@
       </div>
 
       <!--Bar chart card-->
-      <div class="bar"></div>
+      <div class="bg-white mt-6 mx-10 py-4 card">
+        <h1 class="font-bold font-dmSans text-xl md:text-3xl text-darkBrown ml-7 mr-14 md:ml-10 md:mr-36 mt-6 md:mt-8">
+          Spending - Last 7 days
+        </h1>
+
+        <div>
+          <div class="mx-10">
+            <canvas id="myChart"></canvas>
+          </div>
+          <hr class="bg-hrCream  mt-4 mb-4 mx-5 md:mx-10" />
+          <div class="balance flex flex-row items-center">
+            <div class="price"> 
+              <p class="ml-5 md:ml-10 font-dmSans text-base text-mediumBrown md:mr-10">Total this month</p>
+              <p
+                class="text-darkBrown ml-5 md:ml-10 font-dmSans text-3xl md:text-4xl font-bold "
+              >
+                $478.33
+              </p>
+            </div>
+            <div class="details">
+              <p
+                class="text-darkBrown font-dmSans text-base font-bold md:ml-56 md:mr-10 ml-32"
+              >
+                +2.4%
+              </p>
+              <p
+                class="font-dmSans text-base text-mediumBrown md:ml-40 md:mr-10 ml-16"
+              >
+                from last month
+              </p>
+            </div>
+        </div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

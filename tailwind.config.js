@@ -3,7 +3,7 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     screens : {
-      sm: '375px',
+      sm: '480px',
       md: '768px',
       lg: '976px',
       xl: '1440px'
@@ -16,11 +16,13 @@ module.exports = {
         mediumBrown: 'hsl(28, 10%, 53%)',
         cream: 'hsl(27, 66%, 92%)',
         paleOrange: 'hsl(33, 100%, 98%)',
-        redBalance: 'hsla(10, 79%, 64%, 1)'
+        redBalance: 'hsla(10, 79%, 64%, 1)',
+        hrCream: 'hsla(27, 66%, 92%, 1)',
+        mediumBrown: 'hsla(27, 10%, 52%, 1)'
       },
       textColor: ['responsive', 'hover', 'focus', 'group-hover'],
       fontFamily: {
-        redhat: ['DM Sans', 'sans-serif'],
+        dmSans: ['DM Sans', 'sans-serif'],
     },
   },
   plugins: [],

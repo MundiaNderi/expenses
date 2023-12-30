@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* bars */
+#my-chart #my-red-bars rect {
+    fill: #EC755D !important;
+    border-radius: 5px !important;
+}
+
+
+@media(min-width: 756px) {
+.card {
+        width: 540px;
+        height: 500px;
+        flex-shrink: 0;
+        border-radius: 20px;
+    }
+
+    .balance {
+        border-radius: 20px;
+        width: 540px;
+        height: 125px;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .balance {
+        width: 343px;
+        height: 97px;
+        border-radius: 10px;
+    }
+
+    .card {
+        width: 343px;
+        height: 400px;
+        border-radius: 10px;
+    }
+}
